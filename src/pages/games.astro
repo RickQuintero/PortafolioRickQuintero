@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Games | Ricardo Quintero" description="Game portfolio showcasing Unity projects by Ricardo Quintero.">
+    <section class="px-6 sm:px-8 pt-16 pb-24 sm:pt-24">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-heading fade-in">
+                <h2>My <span class="text-primary">Games</span></h2>
+                <p class="text-lg">Projects built with passion, code, and creativity.</p>
+            </div>
+
+            <div class="space-y-16">
+                <article class="card p-0 overflow-hidden fade-in fade-in-delay-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- Thumbnail / Visual -->
+                        <div class="relative bg-surface/50 flex items-center justify-center min-h-[280px] lg:min-h-[400px]">
+                            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
+                            <div class="relative text-center p-8">
+                                <div class="w-24 h-24 mx-auto mb-4 rounded-2xl bg-primary/20 flex items-center justify-center">
+                                    <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-text-muted text-sm">Game Preview</p>
+                            </div>
+                        </div>
+
+                        <!-- Game Details -->
+                        <div class="p-8 lg:p-10 flex flex-col justify-center">
+                            <h3 class="text-2xl sm:text-3xl font-bold mb-4">Hunger of the Forest</h3>
+                            <p class="text-text-muted leading-relaxed mb-6">
+                                Hunger of the Forest is an orthographic top-down stylized survival game.
+                            </p>
+                            <p class="text-text-muted leading-relaxed mb-6">
+                                You must collect cows by creating paths of wheat, gather money, and carefully manage your resources — all while surviving the dangers of the forest at night.
+                            </p>
+                            <p class="text-text-muted leading-relaxed mb-6">
+                                When the forest calms down, boot up the machine and defend Earth from incoming asteroids in a fully playable retro mini-game inspired by classic 8-bit space shooters.
+                            </p>
+
+                            <!-- Tech Tags -->
+                            <div class="flex flex-wrap gap-3 mb-6">
+                                <span class="tag">
+                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path>
+                                    </svg>
+                                    Unity
+                                </span>
+                                <span class="tag">
+                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"></path>
+                                    </svg>
+                                    C#
+                                </span>
+                                <span class="tag">
+                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+                                    </svg>
+                                    Solo Developer
+                                </span>
+                            </div>
+
+                            <!-- Current Bugs -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-semibold text-text-muted uppercase tracking-wider mb-3">Current Bugs</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2 text-sm text-gray-300">
+                                        <svg class="w-4 h-4 text-primary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+                                        </svg>
+                                        Lever bug: The lever moves in the wrong direction when opening the gate.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- New On Working System -->
+                            <div class="mb-8">
+                                <h4 class="text-sm font-semibold text-text-muted uppercase tracking-wider mb-3">New On Working System</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2 text-sm text-gray-300">
+                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        Planet Defender is now partially playable as a mini-game inside the cabin.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- CTA -->
+                            <a href="https://rickquintero.itch.io/hunger-of-the-forest" target="_blank" rel="noopener noreferrer" class="btn btn-primary self-start">
+                                Play on Itch.io
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- More Games Coming Soon -->
+            <div class="mt-16 text-center fade-in">
+                <div class="card inline-block px-8 py-6">
+                    <p class="text-text-muted">
+                        More projects coming soon. Stay tuned!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

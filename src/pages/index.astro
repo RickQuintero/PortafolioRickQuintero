@@ -1,19 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Home | Ricardo Quintero">
+    <!-- Hero Section -->
+    <section class="relative px-6 sm:px-8 pt-20 pb-24 sm:pt-32 sm:pb-36">
+        <div class="max-w-6xl mx-auto">
+            <!-- Decorative background elements -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="relative text-center max-w-3xl mx-auto">
+                <!-- Profile Picture -->
+                <div class="fade-in mb-8">
+                    <img
+                        src="/images/profile.png"
+                        alt="Ricardo Quintero"
+                        class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-primary/30 shadow-lg shadow-primary/20"
+                        style="border-radius: 50%;"
+                    />
+                </div>
+
+                <div class="fade-in fade-in-delay-1">
+                    <span class="tag mb-6 inline-block">Unity Developer</span>
+                </div>
+                <h1 class="fade-in fade-in-delay-1 mb-6">
+                    Ricardo <span class="text-primary">Quintero</span>
+                </h1>
+                <p class="fade-in fade-in-delay-2 text-xl sm:text-2xl text-text-muted font-medium mb-4">
+                    Unity Developer | C# Programmer
+                </p>
+                <p class="fade-in fade-in-delay-3 text-text-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+                    Unity developer focused on gameplay systems, mechanics programming, and interactive experiences. Strong background in C# scripting and experience creating 3D assets using Blender.
+                </p>
+                <div class="fade-in fade-in-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="/games" class="btn btn-primary btn-lg sm:min-w-48">
+                        View My Games
+                    </a>
+                    <a href="/contact" class="btn btn-outline btn-lg sm:min-w-48">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Overview Section -->
+    <section class="px-6 sm:px-8 pb-24">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="card text-center fade-in fade-in-delay-1">
+                    <div class="text-4xl mb-4">
+                        <svg class="w-10 h-10 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">C# Programming</h3>
+                    <p class="text-text-muted text-sm">Gameplay systems, mechanics, and interactive logic built with clean, maintainable C# code.</p>
+                </div>
+                <div class="card text-center fade-in fade-in-delay-2">
+                    <div class="text-4xl mb-4">
+                        <svg class="w-10 h-10 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Unity Engine</h3>
+                    <p class="text-text-muted text-sm">Complete game development from concept to deployment using the Unity game engine.</p>
+                </div>
+                <div class="card text-center fade-in fade-in-delay-3">
+                    <div class="text-4xl mb-4">
+                        <svg class="w-10 h-10 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">3D with Blender</h3>
+                    <p class="text-text-muted text-sm">3D modeling and asset creation using Blender for game prototyping and production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
