@@ -1,30 +1,46 @@
 ---
-import Logo from '../components/Logo.astro';
+interface Props {
+    currentPath: string;
+}
+
+const { currentPath } = Astro.props;
 
 const navItems = [
     { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' }
+    { linkText: 'Games', href: '/games' },
+    { linkText: 'About', href: '/about' },
+    { linkText: 'Contact', href: '/contact' },
 ];
+
+function isActive(href: string, current: string) {
+    if (href === '/') return current === '/';
+    return current.startsWith(href);
+}
 ---
 
-<nav class="flex flex-wrap items-center gap-4 pt-6 pb-16 sm:pt-12 sm:pb-24">
-    <a href="/">
-        <Logo />
-    </a>
-    {
-        !!navItems?.length && (
-            <ul class="flex flex-wrap gap-x-4 gap-y-1">
+<nav class="sticky top-0 z-50 border-b border-white/10 bg-bg/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+            <a href="/" class="text-xl font-bold no-underline text-white hover:text-primary transition-colors">
+                RQ<span class="text-primary">.</span>
+            </a>
+            <ul class="flex items-center gap-1 sm:gap-2">
                 {navItems.map((item) => (
                     <li>
-                        <a href={item.href} class="inline-block px-1.5 py-1 sm:px-3 sm:py-2">
+                        <a
+                            href={item.href}
+                            class:list={[
+                                'inline-block px-3 py-2 text-sm font-medium rounded-lg no-underline transition-all duration-200',
+                                isActive(item.href, currentPath)
+                                    ? 'text-primary bg-primary/10'
+                                    : 'text-text-muted hover:text-white hover:bg-white/5',
+                            ]}
+                        >
                             {item.linkText}
                         </a>
                     </li>
                 ))}
             </ul>
-        )
-    }
+        </div>
+    </div>
 </nav>
