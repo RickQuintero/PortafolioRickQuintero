@@ -10,228 +10,179 @@ import Layout from '../layouts/Layout.astro';
                 <p class="text-lg">Projects built with passion, code, and creativity.</p>
             </div>
 
-            <div class="space-y-16">
-                <article class="card p-0 overflow-hidden fade-in fade-in-delay-2">
-                    <div class="grid grid-cols-1 lg:grid-cols-2">
-                        <!-- Thumbnail / Visual -->
-                        <div class="relative bg-surface/50 flex items-center justify-center min-h-[280px] lg:min-h-[400px]">
-                            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
-                            <div class="relative text-center p-8">
-                                <img
-                                    src="/images/cash-metal-logo.png"
-                                    alt="Cash &amp; Metal : Arena logo"
-                                    class="w-48 h-48 mx-auto object-contain"
-                                />
-                                <p class="text-text-muted text-sm mt-4">Main Logo</p>
-                            </div>
-                        </div>
+            <!-- Games Grid: 1 col mobile, 2 col tablet, 2 col desktop -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
 
-                        <!-- Game Details -->
-                        <div class="p-8 lg:p-10 flex flex-col justify-center">
-                            <h3 class="text-2xl sm:text-3xl font-bold mb-4">Cash &amp; Metal : Arena</h3>
-                            <p class="text-text-muted leading-relaxed mb-6">
-                                Crash &amp; Metal is a fast-paced combat arena game inspired by the intensity and destructive chaos of BattleBots. Take control of a metal-clad robot equipped with a heavy shovel weapon and battle against enemy machines in a brutal arena where survival is the only objective.
-                            </p>
-                            <p class="text-text-muted leading-relaxed mb-6">
-                                Currently in Alpha, the game focuses on core mechanics and system development. There is no Game Over screen yet — the experience is built around an endless combat loop of destruction and respawning.
-                            </p>
-
-                            <!-- Tech Tags -->
-                            <div class="flex flex-wrap gap-3 mb-6">
-                                <span class="tag">
-                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path>
-                                    </svg>
-                                    Unity
-                                </span>
-                                <span class="tag">
-                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"></path>
-                                    </svg>
-                                    C#
-                                </span>
-                                <span class="tag">
-                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
-                                    </svg>
-                                    Solo Developer
-                                </span>
-                            </div>
-
-                            <!-- Systems Implemented -->
-                            <div class="mb-8">
-                                <h4 class="text-sm font-semibold text-text-muted uppercase tracking-wider mb-3">Systems Implemented</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Custom movement system
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Physics simulation
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Power-Up system
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Entity Pooling (performance optimization)
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Centralized Audio Manager
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Simple AI Follower behavior
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <p class="text-text-muted text-sm">
-                                Alpha build focused on core combat systems.
-                            </p>
+                <!-- Cash & Metal -->
+                <article class="game-card fade-in fade-in-delay-1">
+                    <div class="game-card-image-wrapper">
+                        <div class="game-card-image-circle">
+                            <img
+                                src="/images/cash-metal-logo.png"
+                                alt="Cash &amp; Metal logo"
+                                class="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
-                </article>
-                <article class="card p-0 overflow-hidden fade-in fade-in-delay-2">
-                    <div class="grid grid-cols-1 lg:grid-cols-2">
-                        <!-- Thumbnail / Visual -->
-                        <div class="relative bg-surface/50 flex items-center justify-center min-h-[280px] lg:min-h-[400px]">
-                            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
-                            <div class="relative text-center p-8">
-                                <img
-                                    src="/images/ui-icon-hunger-of-the-forest.png"
-                                    alt="Hunger of the Forest icon"
-                                    class="w-36 h-36 mx-auto object-contain"
-                                />
-                                <p class="text-text-muted text-sm mt-4">Game Icon</p>
-                            </div>
-                        </div>
-
-                        <!-- Game Details -->
-                        <div class="p-8 lg:p-10 flex flex-col justify-center">
-                            <h3 class="text-2xl sm:text-3xl font-bold mb-4">Hunger of the Forest</h3>
-                            <p class="text-text-muted leading-relaxed mb-6">
-                                Hunger of the Forest is an orthographic top-down stylized survival game.
-                            </p>
-
-                            <!-- Tech Tags -->
-                            <div class="flex flex-wrap gap-3 mb-6">
-                                <span class="tag">
-                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path>
-                                    </svg>
-                                    Unity
-                                </span>
-                                <span class="tag">
-                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"></path>
-                                    </svg>
-                                    C#
-                                </span>
-                                <span class="tag">
-                                    <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
-                                    </svg>
-                                    Solo Developer
-                                </span>
-                            </div>
-
-                            <!-- Systems Implemented -->
-                            <div class="mb-8">
-                                <h4 class="text-sm font-semibold text-text-muted uppercase tracking-wider mb-3">Systems Implemented</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Custom movement system
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Physics simulation
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        AI Nav Agent with real-time obstacle handling
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Entity Pooling (performance optimization)
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Centralized Audio Manager
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Daylight behavior system
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Transparent shader integration
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Store System (Scriptable Objects based)
-                                    </li>
-                                    <li class="flex items-start gap-2 text-sm text-gray-300">
-                                        <svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                        Animation Layers
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- CTA -->
-                            <a href="https://rickquintero.itch.io/hunger-of-the-forest" target="_blank" rel="noopener noreferrer" class="btn btn-primary self-start">
-                                Play on Itch.io
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
-                                </svg>
-                            </a>
-                        </div>
+                    <div class="game-card-content">
+                        <h3 class="text-xl font-bold mb-2">Cash &amp; Metal</h3>
+                        <p class="text-text-muted text-sm leading-relaxed mb-3">
+                            A fast-paced combat arena game inspired by the intensity and destructive chaos of BattleBots. Take control of a metal-clad robot and battle enemy machines in a brutal arena where survival is the only objective.
+                        </p>
+                        <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-4">
+                            Full Game Developer
+                        </p>
+                        <a href="https://rickquintero.itch.io/crash-metal" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-full">
+                            Play / View Project
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                            </svg>
+                        </a>
                     </div>
                 </article>
-            </div>
 
-            <!-- More Games Coming Soon -->
-            <div class="mt-16 text-center fade-in">
-                <div class="card inline-block px-8 py-6">
-                    <p class="text-text-muted">
-                        More projects coming soon. Stay tuned!
-                    </p>
-                </div>
+                <!-- Hunger of the Forest -->
+                <article class="game-card fade-in fade-in-delay-2">
+                    <div class="game-card-image-wrapper">
+                        <div class="game-card-image-circle">
+                            <img
+                                src="/images/ui-icon-hunger-of-the-forest.png"
+                                alt="Hunger of the Forest icon"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="text-xl font-bold mb-2">Hunger of the Forest</h3>
+                        <p class="text-text-muted text-sm leading-relaxed mb-3">
+                            An orthographic top-down stylized survival game. Gather resources, craft tools, and survive the dangers lurking within the forest.
+                        </p>
+                        <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-4">
+                            Full Game Developer
+                        </p>
+                        <a href="https://rickquintero.itch.io/hunger-of-the-forest" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-full">
+                            Play / View Project
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- The Beacon -->
+                <article class="game-card fade-in fade-in-delay-3">
+                    <div class="game-card-image-wrapper">
+                        <div class="game-card-image-circle">
+                            <img
+                                src="/images/the-beacon-logo.png"
+                                alt="The Beacon logo"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="text-xl font-bold mb-2">The Beacon</h3>
+                        <p class="text-text-muted text-sm leading-relaxed mb-3">
+                            A game about living the quiet but vital duty of a lighthouse keeper. Keep the light alive and guide ships safely through the darkness. Explore by day to gather fuel and repair materials, then manage the lighthouse systems at night.
+                        </p>
+                        <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-4">
+                            Full Game Developer
+                        </p>
+                        <a href="https://rickquintero.itch.io/the-beacon" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-full">
+                            Play / View Project
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Final Charge -->
+                <article class="game-card fade-in fade-in-delay-4">
+                    <div class="game-card-image-wrapper">
+                        <div class="game-card-image-circle">
+                            <img
+                                src="/images/final-charge-cover.jpg"
+                                alt="Final Charge cover"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="text-xl font-bold mb-2">Final Charge</h3>
+                        <p class="text-text-muted text-sm leading-relaxed mb-3">
+                            A 2.5D platformer where you play as Robot&iacute;n, a small robot escaping a factory about to be destroyed. With your battery almost empty, dodge obstacles and rebel robots before running out of power.
+                        </p>
+                        <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-4">
+                            Project Manager / Programmer
+                        </p>
+                        <a href="https://rickquintero.itch.io/final-charge" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-full">
+                            Play / View Project
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
 </Layout>
+
+<style>
+    .game-card {
+        background: rgba(22, 33, 62, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        backdrop-filter: blur(8px);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(108, 99, 255, 0.3);
+        box-shadow: 0 10px 25px -5px rgba(108, 99, 255, 0.08),
+                    0 8px 10px -6px rgba(108, 99, 255, 0.04);
+    }
+
+    .game-card-image-wrapper {
+        width: 100%;
+        padding: 2rem 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .game-card-image-circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid rgba(108, 99, 255, 0.3);
+        background: rgba(26, 26, 46, 0.6);
+        flex-shrink: 0;
+    }
+
+    .game-card-content {
+        padding: 1.25rem 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+    }
+
+    .game-card-content p.text-text-muted {
+        flex: 1;
+    }
+
+    .btn-sm {
+        --btn-py: 0.625rem;
+        --btn-px: 1.25rem;
+        --btn-font-size: 0.8125rem;
+    }
+</style>
